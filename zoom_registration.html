@@ -101,6 +101,10 @@
 											<li>
 												<a href="https://docs.google.com/forms/d/e/1FAIpQLSdPboJuNQs2exQPlT8VZHe33WZZcycwn4gzAKbJzNkqHnhRuw/viewform?hl=en" target="_blank" rel="noreferrer noopener" class="button primary icon solid fa-clipboard-check">Member/Attendees Register</a>
 											</li>
+											<li>
+												<!--Chat Text Link will appear here-->
+												<h4><em><div id="MyLiveChatContainer"></div></em></h4>
+											</li>
 										</ul>
 									
 
@@ -150,6 +154,17 @@
 
 
 	<!--MyLivechat  -->
+
+
+	<!--Chat Text Link will appear here-->
+	<div id="MyLiveChatContainer"></div>
+
+	<!--Add the following script at the bottom of the web page (before </body></html>)-->
+	<script type="text/javascript">function add_chatlink(){var hccid=23550551;var nt=document.createElement("script");nt.async=true;nt.src="https://www.mylivechat.com/chatlink.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);} 
+add_chatlink();</script>
+
+
+
 	
 		<!-- Embedded Chat -->
 		<script type="text/javascript">function add_chatinline(){var hccid=23550551;var nt=document.createElement("script");nt.async=true;nt.src="https://www.mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
