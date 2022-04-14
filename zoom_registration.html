@@ -84,16 +84,6 @@
 											<!-- <li>Link to the registration/attendance form is provided in the box below.</li> -->
 											<li><strong>Zoom Meeting</strong> link will be available after submitting the registration form.</li>
 										</ul>
-										<!-- Buttons -->
-<!-- 										<ul class="actions stacked">
-											<li>
-												<a href="https://docs.google.com/forms/d/e/1FAIpQLSfmmvz7mFjOo9AztDrofCDoxCpV-VPgCW2pV_wsgrHHhgrWmA/viewform?hl=en" target="_blank" rel="noreferrer noopener" class="button icon solid fa-clipboard-check">First Timers -Register</a>
-											</li>
-											<li>
-												<a href="https://docs.google.com/forms/d/e/1FAIpQLSe7rZ7OjiMULyStyn6KzVmb3FQFBnNc7_y2lBgTlMUmmCy8zQ/viewform?hl=en" target="_blank" rel="noreferrer noopener" class="button primary icon solid fa-clipboard-check">Members/Attendees -Register</a>
-											</li>
-										</ul> -->
-
 										<ul class="actions stacked">
 											<li>
 												<a href="https://docs.google.com/forms/d/e/1FAIpQLScG4kJ5sYckoB-EkoRFO8GRn27SWq7rzaRY9-uUJuTIEVwaSw/viewform?hl=en" target="_blank" rel="noreferrer noopener" class="button icon solid fa-clipboard-check">First Timers Register</a>
@@ -101,8 +91,7 @@
 											<li>
 												<a href="https://docs.google.com/forms/d/e/1FAIpQLSdPboJuNQs2exQPlT8VZHe33WZZcycwn4gzAKbJzNkqHnhRuw/viewform?hl=en" target="_blank" rel="noreferrer noopener" class="button primary icon solid fa-clipboard-check">Member/Attendees Register</a>
 											</li>
-											<li>
-												<!--Chat Text Link will appear here-->
+											<li><!--Chat Text Link will appear here-->
 												<h3><em><div id="MyLiveChatContainer"></div></em></h3>
 											</li>
 										</ul>
@@ -161,7 +150,7 @@
 
 	<!--Add the following script at the bottom of the web page (before </body></html>)-->
 	<script type="text/javascript">function add_chatlink(){var hccid=23550551;var nt=document.createElement("script");nt.async=true;nt.src="https://www.mylivechat.com/chatlink.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);} 
-add_chatlink();</script>
+		add_chatlink();</script>
 
 
 
@@ -177,6 +166,36 @@ add_chatlink();</script>
 		</script>
 	<!-- MyLivechat end -->
 
+	<!-- Messenger Chat Plugin Code -->
+		<div id="fb-root"></div>
+
+    	<!-- Your Chat Plugin code -->
+    	<div id="fb-customer-chat" class="fb-customerchat">
+    	</div>
+
+	    <script>
+	      var chatbox = document.getElementById('fb-customer-chat');
+	      chatbox.setAttribute("page_id", "541539045910294");
+	      chatbox.setAttribute("attribution", "biz_inbox");
+	    </script>
+
+	    <!-- Your SDK code -->
+	    <script>
+	      window.fbAsyncInit = function() {
+	        FB.init({
+	          xfbml            : true,
+	          version          : 'v13.0'
+	        });
+	      };
+
+	      (function(d, s, id) {
+	        var js, fjs = d.getElementsByTagName(s)[0];
+	        if (d.getElementById(id)) return;
+	        js = d.createElement(s); js.id = id;
+	        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+	        fjs.parentNode.insertBefore(js, fjs);
+	      }(document, 'script', 'facebook-jssdk'));
+	    </script>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
